@@ -1,4 +1,5 @@
 import { rootReducer } from '.'
+import { isEmpty } from 'ramda'
 import {
     todoAdded,
     getTodos,
@@ -28,6 +29,7 @@ describe('state:reducers', () => {
       todos: [{todo:'Make a Todo lists'}]
       })
     })
+
   })
 })
 

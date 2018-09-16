@@ -5,9 +5,7 @@ import { initialState, TODO_ADDED } from '..'
 function rootReducer (state = initialState, { payload = {}, type}) {
     switch (type) {
         case TODO_ADDED:
-            return isEmpty(payload)
-                ? state
-                : {
+            return{
                     ...state,
                     todos: [...state.todos, payload]
                 }
@@ -17,3 +15,10 @@ function rootReducer (state = initialState, { payload = {}, type}) {
 }
 
 export { rootReducer }
+
+// case SQUARE_CLICKED:
+//       return {
+//         ...state,
+//         moves: isUndefined(square) ? state.moves : [...state.moves, square]
+//       }
+//     default:

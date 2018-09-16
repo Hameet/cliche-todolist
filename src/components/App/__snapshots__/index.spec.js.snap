@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:App renders the App with its Css properties 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h1
+      className="App-title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <styled.div>
+    <div
+      className="body"
+    >
+      <Connect(TodoForm) />
+      <Connect(Todolist) />
+    </div>
+  </styled.div>
+</div>
+`;

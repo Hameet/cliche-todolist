@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:TodoForm renders the TodoForm and CSS properties properly 1`] = `
+<form>
+  <div>
+    <label>
+      To do
+    </label>
+    <br />
+    <styled.input
+      name="todo"
+    />
+  </div>
+</form>
+`;

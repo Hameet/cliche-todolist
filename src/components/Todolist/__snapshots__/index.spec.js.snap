@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:Todolist renders the Todolist properly 1`] = `
+<ul>
+  <li
+    data-index={0}
+    key="0"
+  >
+    X
+  </li>
+  <li
+    data-index={1}
+    key="1"
+  >
+    Y
+  </li>
+</ul>
+`;
+
+exports[`components:Todolist returns null when the Todolist is empty or undefined 1`] = `""`;

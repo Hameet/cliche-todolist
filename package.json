@@ -8,19 +8,53 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
     "react-scripts": "1.1.5",
     "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.5",
+    "redux-observable": "^1.0.0",
+    "rxjs": "^6.3.2",
+    "rxjs-compat": "^6.3.2",
     "styled-components": "^3.4.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --env=jsdom --coverage"
   },
   "devDependencies": {
+    "@babel/preset-env": "7.0.0-beta.46",
+    "chalk": "^2.4.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "jest-enzyme": "^6.0.2",
+    "jest-styled-components": "^5.0.1",
+    "lint-staged": "^7.2.0",
+    "node-fs-extra": "^0.8.2",
     "prettier-standard": "^8.0.1",
+    "react-test-renderer": "^16.4.1",
+    "redux-devtools-extension": "^2.13.5",
     "redux-mock-store": "^1.5.3"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/components/index.js",
+      "!src/components/styled/index.js",
+      "!src/constants.js",
+      "!src/containers/index.js",
+      "!src/index.js",
+      "!src/registerServiceWorker.js",
+      "!src/state/constants.js",
+      "!src/state/index.js",
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!src/setUpTest.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
