@@ -1,4 +1,4 @@
-# A cliche todo list but with stateless functional components
+## A cliche todo list but with stateless functional components
 ## This also has a 100% test coverage
 
 ## Clone the repo and then do the following to run
@@ -36,6 +36,6 @@ You should be able to see a fully passing coverage report, like this:
 
 ## Why Functional programming?
 
-The real aim for this project was to follow a different approach to the one I'm used to. One of the projects I'm currently working one <a href="https://github.com/PaperHat/legal-checkup-client">Legal Check-up</a>, involves similar structuring of code. 
+The real aim for this project was to follow a different approach to the one I'm used to. One of the projects I'm currently working on <a href="https://github.com/PaperHat/legal-checkup-client">Legal Check-up</a>, involves similar structuring of code. 
 
-Seperating the "state" and "store" from the components and test each individual part of the code seperately. 
+This involves seperating the "state" and the "store" from the components and testing individual parts of the code seperately with Jest and Enzyme.  
