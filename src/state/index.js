@@ -1,14 +1,16 @@
-import { todoAdded } from './actions'
+import { todoAdded, deleteTodo } from './actions'
 import { rootReducer } from './reducers'
 import { getTodos } from './selectors'
 import configureStore from './store'
-import { initialState, TODO_ADDED } from './Constants'
+import { initialState, TODO_ADDED, DELETE_TODO } from './Constants'
 
 export {
-    todoAdded,
-    rootReducer,
-    getTodos,
-    configureStore,
-    initialState,
-    TODO_ADDED
+  todoAdded,
+  deleteTodo,
+  rootReducer,
+  getTodos,
+  configureStore,
+  initialState,
+  TODO_ADDED,
+  DELETE_TODO
 }

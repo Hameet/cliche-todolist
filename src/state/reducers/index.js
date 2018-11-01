@@ -1,24 +1,25 @@
-import { isEmpty } from 'ramda'
+import { slice, length } from 'ramda'
 
-import { initialState, TODO_ADDED } from '..'
+import { initialState, TODO_ADDED, DELETE_TODO } from '..'
 
-function rootReducer (state = initialState, { payload = {}, type}) {
-    switch (type) {
-        case TODO_ADDED:
-            return{
-                    ...state,
-                    todos: [...state.todos, payload]
-                }
-        default:
-            return state
-    }
+function rootReducer (state = initialState, { payload = {}, type }) {
+  switch (type) {
+    case TODO_ADDED:
+      return {
+        ...state,
+        todos: [...state.todos, payload]
+      }
+    default:
+      return state
+    case DELETE_TODO:
+      return {
+        ...state,
+        users: [
+          ...slice(0, payload.index, state.todos),
+          ...slice(payload.index + 1, length(state.todos), state.todos)
+        ]
+      }
+  }
 }
 
 export { rootReducer }
-
-// case SQUARE_CLICKED:
-//       return {
-//         ...state,
-//         moves: isUndefined(square) ? state.moves : [...state.moves, square]
-//       }
-//     default:

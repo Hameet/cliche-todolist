@@ -1,12 +1,19 @@
-import { TODO_ADDED } from '..'
+import { TODO_ADDED, DELETE_TODO } from '..'
 
 function todoAdded (todo) {
-    return {
-        type: TODO_ADDED,
-        payload: {
-            todo
-        }
+  return {
+    type: TODO_ADDED,
+    payload: {
+      todo
     }
+  }
 }
 
-export { todoAdded }
+function deleteTodo (index) {
+  return {
+    type: DELETE_TODO,
+    payload: { index }
+  }
+}
+
+export { todoAdded, deleteTodo }
