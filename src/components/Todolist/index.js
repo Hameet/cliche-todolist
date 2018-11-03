@@ -5,7 +5,7 @@ import { isNilOrEmpty } from 'ramda-adjunct'
 const indexedMap = addIndex(map)
 
 export default function Todolist ({ todos, handleOnDelete, index }) {
-  // console.log("hey", indexedMap)
+  console.log('index', index)
   return isNilOrEmpty(todos)
     ? null
     : <ul>

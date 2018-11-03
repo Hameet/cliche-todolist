@@ -7,12 +7,18 @@ exports[`components:Todolist renders the Todolist properly 1`] = `
     key="0"
   >
     X
+    <button>
+       X
+    </button>
   </li>
   <li
     data-index={1}
     key="1"
   >
     Y
+    <button>
+       X
+    </button>
   </li>
 </ul>
 `;

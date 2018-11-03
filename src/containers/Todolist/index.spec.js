@@ -37,22 +37,3 @@ describe('containers:Todolist', () => {
     })
   })
 })
-
-// it(`maps handleClick to dispatch ${PREVIOUS_QUESTION_REQUESTED} action`, () => {
-//   const questionIndex = 4
-//   const store = mockStore(state)
-//   const PreviousQuestionButton = makePreviousQuestionButton(
-//     StyledDesktopPreviousButton
-//   )
-//   store.dispatch = jest.fn()
-
-//   const wrapper = shallow(
-//     <PreviousQuestionButton questionIndex={questionIndex} store={store} />
-//   )
-
-//   wrapper.dive().props().onClick()
-
-//   expect(store.dispatch).toHaveBeenCalledWith({
-//     type: PREVIOUS_QUESTION_REQUESTED
-//   })
-// })
