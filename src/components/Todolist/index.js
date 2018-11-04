@@ -7,10 +7,10 @@ const indexedMap = addIndex(map)
 
 const Button = styled.button`
   
-  background: ${props => (props.primary ? 'palevioletred' : 'white')};
-  color: ${props => (props.primary ? 'white' : 'palevioletred')};
+  background: palevioletred ;
+  color: white;
 
-  font-size: 1em;
+  font-size: .5em;
   margin: 1em;
   padding: 0.25em 1em;
   border: 2px solid palevioletred;
@@ -33,7 +33,7 @@ export default function Todolist ({ todos, handleOnDelete, index }) {
             <Li key={idx} data-index={idx}>
               {todo}
               <Button onClick={handleOnDelete.bind(index, null)}>
-                &nbsp;X
+                &nbsp;Del
               </Button>
             </Li>
           ),
