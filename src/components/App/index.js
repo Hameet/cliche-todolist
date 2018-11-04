@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import logo from '../../logo.svg';
+import React, { Component } from 'react'
+
 import styled from 'styled-components'
-import '../../App.css';
+import '../../App.css'
 
 import { Todo } from '../../containers'
 import { Todolist } from '../../containers'
@@ -15,28 +15,28 @@ const StyledApp = styled.div`
   padding: 0;
   width: 100vw;
 `
-StyledApp.defaultName = 'StyledApp'
-
+const H1 = styled.h1`
+font-size: 80px;
+color: red;
+margin-top: 50px;
+`
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div className='App'>
+        <header className='App-header'>
+          <H1 className='App-title'>To do or not to do</H1>
         </header>
         <StyledApp>
-          <div className = "body">
-          <Todo/>
-          <Todolist />
+          <div className='body'>
+            <Todo />
+            <Todolist />
           </div>
-      
+
         </StyledApp>
       </div>
-    );
+    )
   }
 }
 
-export default App;
-
-
+export default App
