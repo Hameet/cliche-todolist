@@ -16,8 +16,6 @@ export default function TodoForm ({ handleBlur }) {
   return (
     <form>
       <div>
-        <label><h1>To do</h1></label>
-        <br />
         <StyledInput name='todo' onBlur={handleBlur} />
       </div>
     </form>

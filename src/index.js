@@ -2,8 +2,9 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 
-import { App }  from './components'
+import { App } from './components'
 import { configureStore } from './state'
+import baseStyles from './styles'
 import registerServiceWorker from './registerServiceWorker'
 
 const store = configureStore()
@@ -14,5 +15,5 @@ render(
   </Provider>,
   document.getElementById('root')
 )
-
+baseStyles()
 registerServiceWorker()
