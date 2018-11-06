@@ -25,7 +25,9 @@ class App extends Component {
     return (
       <div className='App'>
         <header className='App-header'>
-          <H1 className='App-title'>To do or Not To do</H1>
+          <H1 className='App-title'>
+            Enter text and hit Tab to add To do or Not To do
+          </H1>
         </header>
         <StyledApp>
           <div className='body'>
