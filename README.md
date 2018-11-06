@@ -38,4 +38,4 @@ You should be able to see a fully passing coverage report, like this:
 
 The real aim for this project was to follow a different approach to the one I'm used to. One of the projects I'm currently working on <a href="https://github.com/PaperHat/legal-checkup-client">Legal Check-up</a>, involves similar structuring of code. 
 
-This involves seperating the "state" and the "store" from the components and testing individual parts of the code seperately with Jest and Enzyme. Check this app out<a href="https://cliche-todolist.herokuapp.com/ ">here</a>
+This involves seperating the "state" and the "store" from the components and testing individual parts of the code seperately with Jest and Enzyme. Check this app out <a href="https://cliche-todolist.herokuapp.com/ ">here</a>
