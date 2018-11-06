@@ -24,7 +24,6 @@ const Li = styled.li`
 `
 
 export default function Todolist ({ todos, handleOnDelete, index }) {
-  console.log('index', index)
   return isNilOrEmpty(todos)
     ? null
     : <ul>

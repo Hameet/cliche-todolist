@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className='App'>
         <header className='App-header'>
-          <H1 className='App-title'>To do or not to do</H1>
+          <H1 className='App-title'>To do or Not To do</H1>
         </header>
         <StyledApp>
           <div className='body'>

@@ -12,7 +12,6 @@ const StyledInput = styled.input`
 StyledInput.defaultName = 'StyledInput'
 
 export default function TodoForm ({ handleBlur }) {
-  // console.log("hey", {handleBlur})
   return (
     <form>
       <div>
